@@ -1,13 +1,17 @@
 var images=[
-    "dad.jpg","mom.jpg","sister.jpg"
+    "family book.jpg","dad.jpg","mom.jpg","sister.jpg"
 ];
-var family=[
-    "My dad","My mom","My sister"
+var family_names=[
+    "Family!!","My dad","My mom","My sister"
 ];
+var updated_images=images;
+var updated_names=family_names;
 var i=0;
 function next(){
-    document.getElementById("imgbk").src=images[i] 1++;
-    if(i==3){
+    document.getElementById("imgbk").src=updated_images[i];
+    document.getElementById("display_names").innerHTML=updated_names[i];
+    i++
+    if(i==4){
         i=0;
     }
 }
